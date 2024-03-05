@@ -21,6 +21,10 @@
     Users are strictly prohibited from using this application while under the influence of alcohol or drugs. If under the influence refrain from using the application until you are in an appropriate condition. Being intoxicated will lead to impaired judgment, this will compromise the accuracy and integrity of the digital evidence collection process.<br>
 
     <br>By proceeding to use this First Responder Application, you acknowledge that you have read, understood, and agreed to comply with the terms and conditions outlined in this disclaimer. Failure to adhere to these guidelines may result in legal consequences and disciplinary actions.<br>
+    
+    <div class="flex justify-center">    
+    <a href="{{ route('home') }}" class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Continue</a>
+    </div>
 </div>
 
             </div>
