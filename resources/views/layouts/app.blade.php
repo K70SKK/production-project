@@ -18,30 +18,30 @@
         document.addEventListener('DOMContentLoaded', function() {
             var currentDate = new Date();
             
-            // Format date in UK format (DD/MM/YYYY)
+            
             var day = currentDate.getDate();
-            var month = currentDate.getMonth() + 1; // Months are zero-based
+            var month = currentDate.getMonth() + 1; 
             var year = currentDate.getFullYear();
     
             var formattedDate = (day < 10 ? '0' : '') + day + '/' + (month < 10 ? '0' : '') + month + '/' + year;
             
-            // Format time
+            
             var currentTime = currentDate.toLocaleTimeString('en-GB');
     
             var dateTimeString = 'Date and Time: ' + formattedDate + ' ' + currentTime;
     
-            // Log date and time for debugging
+            
             console.log('Date and Time:', dateTimeString);
     
-            // Insert date and time as a link to datetime.blade.php at the beginning of the body
+            
             var bodyElement = document.querySelector('body');
             var dateAndTimeElement = document.createElement('div');
             dateAndTimeElement.innerHTML = '<a href="' + '{{ route("datetime") }}' + '">' + dateTimeString + '</a>';
             
-            // Log body element for debugging
+            
             console.log('Body Element:', bodyElement);
     
-            // Insert the date and time link at the beginning of the body
+            
             if (bodyElement) {
                 bodyElement.insertBefore(dateAndTimeElement, bodyElement.firstChild);
             } else {
