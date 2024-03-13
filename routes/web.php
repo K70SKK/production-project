@@ -3,7 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DateTimeController; // Add this line
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Step1Controller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -39,6 +39,8 @@ Route::middleware('auth')->group(function () {
     // New routes for date and time
     Route::get('/datetime', [DateTimeController::class, 'showDateTimePage'])->name('datetime');
     Route::post('/changeDateTime', [DateTimeController::class, 'changeDateTime'])->name('changeDateTime'); // Match the name here
+
+    Route::post('/step1/store', [Step1Controller::class, 'store'])->name('step1.store');
 
 });
 
