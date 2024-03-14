@@ -4,6 +4,8 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DateTimeController; 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Step1Controller;
+use App\Http\Controllers\Step2Controller;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,6 +34,10 @@ Route::middleware('auth')->group(function () {
         return view('home'); 
     })->name('home');
 
+    Route::get('/test', function () {
+        return view('test'); 
+    })->name('test');
+
     Route::get('/step1', function () {
         return view('step1'); 
     })->name('step1');
@@ -45,6 +51,7 @@ Route::middleware('auth')->group(function () {
     Route::post('/changeDateTime', [DateTimeController::class, 'changeDateTime'])->name('changeDateTime'); 
 
     Route::post('/step1/store', [Step1Controller::class, 'store'])->name('step1.store');
+    Route::post('/step2/store', [Step2Controller::class, 'store'])->name('step2.store');
 
 });
 

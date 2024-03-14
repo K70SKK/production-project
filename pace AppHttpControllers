@@ -1,0 +1,65 @@
+[33mcommit 191f3c1bfb9ddbbe3b0c8cfb292094d2d5a94d74[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: c3620284 <s.ahmed2629@student.leedsbeckett.ac.uk>
+Date:   Wed Mar 13 23:02:32 2024 +0000
+
+    step 2 textbox added with steps
+
+[33mcommit 8a74daccfb4863833769aae95c16f35a7a4a001f[m
+Author: c3620284 <s.ahmed2629@student.leedsbeckett.ac.uk>
+Date:   Wed Mar 13 01:42:02 2024 +0000
+
+    extra controllers removed and the next button has been added to step1 links to step2
+
+[33mcommit f7297d2815bf8d2198e5d756bd70e9aca9797278[m
+Author: c3620284 <s.ahmed2629@student.leedsbeckett.ac.uk>
+Date:   Wed Mar 13 01:28:30 2024 +0000
+
+    style added to the from also added a title
+
+[33mcommit a3a0f86f2107979349e38e84fb7c4ba02ba78a08[m
+Author: c3620284 <s.ahmed2629@student.leedsbeckett.ac.uk>
+Date:   Wed Mar 13 00:45:35 2024 +0000
+
+    frist step done collecting First reponser details
+
+[33mcommit c93dd1dff85b578f6195bce8cb0f7bc02ce04e50[m
+Author: c3620284 <s.ahmed2629@student.leedsbeckett.ac.uk>
+Date:   Tue Mar 12 01:03:50 2024 +0000
+
+    date and time change form added
+
+[33mcommit ac349e3efdca3cad276a322fa84a1eaafc1e6c91[m
+Author: c3620284 <s.ahmed2629@student.leedsbeckett.ac.uk>
+Date:   Mon Mar 11 19:50:48 2024 +0000
+
+    date and time added in uk format to applayout
+
+[33mcommit 4436cac93ddef87b29c5c41e1c9ea6e9adfa1d5a[m
+Author: c3620284 <s.ahmed2629@student.leedsbeckett.ac.uk>
+Date:   Tue Mar 5 21:11:35 2024 +0000
+
+     homepage crated and step1 page created with buttons to link need to alter from intial paper disgn as it is not user freindly
+
+[33mcommit 45951c7f20e9601462dc7c213d54b1c5876b379a[m
+Author: c3620284 <s.ahmed2629@student.leedsbeckett.ac.uk>
+Date:   Wed Feb 28 20:41:46 2024 +0000
+
+    disclamier added
+
+[33mcommit 7e1f5513438cb6fef8466c82635feff6e524238d[m
+Author: c3620284 <s.ahmed2629@student.leedsbeckett.ac.uk>
+Date:   Wed Feb 28 19:53:43 2024 +0000
+
+    added my logo chnaged the app layout to include my logo
+
+[33mcommit fda0b4bca3f88e621e3bf1268d00dc3c0ff8261e[m
+Author: c3620284 <s.ahmed2629@student.leedsbeckett.ac.uk>
+Date:   Wed Feb 28 03:17:25 2024 +0000
+
+    added my application name to the home page with a discription
+
+[33mcommit 525a3880bb69280e7d214a66c0f0edb2d5e5abad[m
+Author: c3620284 <s.ahmed2629@student.leedsbeckett.ac.uk>
+Date:   Wed Feb 28 02:52:32 2024 +0000
+
+    larvel installed/ user login created

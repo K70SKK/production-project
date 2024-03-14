@@ -14,4 +14,9 @@ class Step1 extends Model
         'time',
         'case_number',
     ];
+
+    public function notes()
+    {
+        return $this->hasMany(Note::class);
+    }
 }
