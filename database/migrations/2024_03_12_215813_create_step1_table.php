@@ -14,7 +14,7 @@ class CreateStep1Table extends Migration
             $table->string('company_data');
             $table->dateTime('time');
             $table->string('case_number');
-            $table->text('notes')->nullable(); // Adding a new column 'notes' as text type
+            $table->text('notes')->nullable(); 
             $table->timestamps();
         });
     }

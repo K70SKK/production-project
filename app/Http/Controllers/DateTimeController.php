@@ -22,7 +22,7 @@ class DateTimeController extends Controller
                 'new_time' => 'required|date_format:H:i',
             ]);
 
-            // Your logic to process the form data goes here
+            
 
             return redirect()->route('datetime')->with('success', 'Date and time changed successfully!');
         } catch (\Exception $e) {

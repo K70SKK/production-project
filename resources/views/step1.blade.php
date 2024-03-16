@@ -7,7 +7,7 @@
     </x-slot>
 
     <div class="min-h-screen bg-gray-100">
-        <div class="container mx-auto flex justify-center items-start py-12"> <!-- Increased py-12 for top padding -->
+        <div class="container mx-auto flex justify-center items-start py-12"> 
             <div class="w-full md:w-1/2">
                 <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
                     <form method="POST" action="{{ route('step1.store') }}">

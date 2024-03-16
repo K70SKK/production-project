@@ -46,6 +46,14 @@ Route::middleware('auth')->group(function () {
         return view('step2'); 
     })->name('step2');
 
+    Route::get('/step3', function () {
+        return view('step3'); 
+    })->name('step3');
+
+    Route::get('/howlook', function () {
+        return view('howlook'); 
+    })->name('howlook');
+    
     
     Route::get('/datetime', [DateTimeController::class, 'showDateTimePage'])->name('datetime');
     Route::post('/changeDateTime', [DateTimeController::class, 'changeDateTime'])->name('changeDateTime'); 
