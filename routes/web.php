@@ -50,6 +50,11 @@ Route::middleware('auth')->group(function () {
         return view('step3'); 
     })->name('step3');
 
+    Route::get('/step4', function () {
+        return view('step4'); 
+    })->name('step4');
+
+
     Route::get('/howlook', function () {
         return view('howlook'); 
     })->name('howlook');
