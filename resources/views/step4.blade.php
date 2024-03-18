@@ -58,9 +58,11 @@
     const addNoteButton = document.getElementById('addNoteButton');
     const noteForm = document.getElementById('noteForm');
     const photoContainer = document.getElementById('photoContainer');
+    let photoCaptured = false; // Flag to track whether a photo is captured
 
     // Function to capture photo from camera
     function capturePhoto() {
+        console.log('Capture photo button clicked');
         canvas.width = video.videoWidth;
         canvas.height = video.videoHeight;
         canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
@@ -74,27 +76,46 @@
         photo.src = imageDataURL;
         photoContainer.innerHTML = '';
         photoContainer.appendChild(photo);
+        photoCaptured = true;
     }
 
     // Function to retake photo
     function retakePhoto() {
+        console.log('Retake photo button clicked');
         imageInput.value = '';
         captureButton.style.display = 'block';
         retakeButton.style.display = 'none';
         addNoteButton.disabled = true;
         photoContainer.innerHTML = ''; // Clear previously captured photo
+        photoCaptured = false;
     }
+
+    // Capture photo when "Capture Photo" button is clicked
+    captureButton.addEventListener('click', function() {
+        capturePhoto();
+    });
+
+    // Retake photo when "Retake" button is clicked
+    retakeButton.addEventListener('click', function() {
+        retakePhoto();
+    });
 
     // Submit form when "Add Note" button is clicked
     addNoteButton.addEventListener('click', function() {
-        noteForm.submit();
+        console.log('Add Note button clicked');
+        if (photoCaptured) {
+            console.log('Form submitted');
+            noteForm.submit(); // Submit the form if image is captured
+        } else {
+            console.log('Please capture a photo before adding a note.');
+        }
     });
 
     // Prevent default form submission behavior
     noteForm.addEventListener('submit', function(event) {
-        event.preventDefault();
-        // Optionally, you can add additional validation here before submitting the form
-        document.getElementById('noteForm').submit();
+        console.log('Form submitted');
+        event.preventDefault(); // Prevent default form submission
+        // Form submission logic here (not needed if using addNoteButton event listener)
     });
 
     // Access user's camera and display video stream
@@ -106,5 +127,6 @@
             console.error('Error accessing camera: ' + err);
         });
 </script>
+
 
 </x-app-layout>
