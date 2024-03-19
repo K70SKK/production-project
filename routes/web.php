@@ -54,11 +54,77 @@ Route::middleware('auth')->group(function () {
         return view('step4'); 
     })->name('step4');
 
+    Route::get('/step5', function () {
+        return view('step5'); 
+    })->name('step5');
+
+    Route::get('/step6', function () {
+        return view('step6'); 
+    })->name('step6');
+
+    Route::get('/step7', function () {
+        return view('step7'); 
+    })->name('step7');
 
     Route::get('/howlook', function () {
         return view('howlook'); 
     })->name('howlook');
-    
+
+    Route::get('/livedead', function () {
+        return view('livedead'); 
+    })->name('livedead');
+
+    Route::get('/chain', function () {
+        return view('chain'); 
+    })->name('chain');    
+
+    Route::get('/end', function () {
+        return view('end'); 
+    })->name('end');    
+
+    Route::get('/list', function () {
+        return view('list'); 
+    })->name('list'); 
+
+    Route::get('/1step', function () {
+        return view('1step'); 
+    })->name('1step');
+
+    Route::get('/2step', function () {
+        return view('2step'); 
+    })->name('2step');
+
+    Route::get('/3step3', function () {
+        return view('3step'); 
+    })->name('3step');
+
+    Route::get('/4step', function () {
+        return view('4step'); 
+    })->name('4step');
+
+    Route::get('/5step', function () {
+        return view('5step'); 
+    })->name('5step');
+
+    Route::get('/6step', function () {
+        return view('6step'); 
+    })->name('6step');
+
+    Route::get('/7step7', function () {
+        return view('7step'); 
+    })->name('7step');
+
+    Route::get('/ihowlook', function () {
+        return view('ihowlook'); 
+    })->name('ihowlook');
+
+    Route::get('/ilivedead', function () {
+        return view('ilivedead'); 
+    })->name('ilivedead');
+
+    Route::get('/ichain', function () {
+        return view('ichain'); 
+    })->name('ichain');  
     
     Route::get('/datetime', [DateTimeController::class, 'showDateTimePage'])->name('datetime');
     Route::post('/changeDateTime', [DateTimeController::class, 'changeDateTime'])->name('changeDateTime'); 

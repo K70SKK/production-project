@@ -42,12 +42,7 @@
     <a href="{{ url()->previous() }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Back</a>
 </div>
 
-<div class="container mx-auto flex justify-end mt-4">
-    <button type="button" id="addNoteButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-        Add Note
-    </button>
-    <a href="{{ route('step5') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Next</a>
-</div>
+
 
 <script>
     const video = document.getElementById('camera');

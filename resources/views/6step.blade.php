@@ -1,17 +1,16 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Step 4: Photograph the Scene and Evidence') }}
+            {{ __('Step 6: Photograph the collected Evidence') }}
         </h2>
     </x-slot>
 
-    <textarea class="w-full h-40 border border-gray-300 rounded-md p-2 mt-4 focus:outline-none focus:ring focus:border-blue-300" placeholder="Photograph any evidence you find, bag and tag it, and create notes to ensure the chain of custody.
-     Take clear photographs of the scene and evidence discovered.
-     Capture images of the location where the device is found.
-     Take photos of any notes and documents near the device.
-     Photograph any additional equipment used for the device.
-     Capture images of any hard drives or storage devices discovered.
-     Ensure photographs are taken in clear lighting conditions." rows="7" cols="50"></textarea>
+    <textarea class="w-full h-40 border border-gray-300 rounded-md p-2 mt-4 focus:outline-none focus:ring focus:border-blue-300" placeholder="Photograph any evidence you have collected and baged and taged with notes to notes to ensure the chain of custody.
+     Take clear photographs.
+     Ensure photographs are taken in clear lighting conditions.
+     This will ensure chain of custody" rows="3" cols="10"></textarea>
+
+     
 
      <div class="container mx-auto flex justify-center items-start py-12">
     <div class="w-full md:w-1/2">
@@ -42,12 +41,7 @@
     <a href="{{ url()->previous() }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Back</a>
 </div>
 
-<div class="container mx-auto flex justify-end mt-4">
-    <button type="button" id="addNoteButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-        Add Note
-    </button>
-    <a href="{{ route('step5') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Next</a>
-</div>
+
 
 <script>
     const video = document.getElementById('camera');
