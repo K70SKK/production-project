@@ -29,7 +29,8 @@
             <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <form method="POST" action="{{ route('step2.store') }}">
 
-                    @csrf                    
+                    @csrf              
+                    <input type="hidden" name="step1_id" value="{{ $step1Id }}">     
                     <div class="mb-4">
                         <label for="note" class="block text-sm font-medium text-gray-700">Note</label>
                         <textarea name="note" id="note" rows="4" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required></textarea>
@@ -52,8 +53,9 @@
     <a href="{{ url()->previous() }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Back</a>
 </div>
 
-    <div class="container mx-auto flex justify-end mt-4">
-        <a href="{{ route('step4') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Next</a>
-    </div>
+<div class="container mx-auto flex justify-end mt-4">
+    <a href="{{ route('step4', ['step1Id' => $step1Id]) }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Next</a>
+</div>
+
 
 </x-app-layout>

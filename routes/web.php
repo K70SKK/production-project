@@ -131,8 +131,14 @@ Route::middleware('auth')->group(function () {
 
     Route::post('/step1/store', [Step1Controller::class, 'store'])->name('step1.store');
     Route::post('/step2/store', [Step2Controller::class, 'store'])->name('step2.store');
+    
 
     Route::get('/step2/create/{step1Id}', [Step2Controller::class, 'create'])->name('step2.create');
+    Route::get('/step3/{step1Id}', [Step2Controller::class, 'step3'])->name('step3');
+    Route::get('/step4/{step1Id}', [Step2Controller::class, 'step4'])->name('step4');
+    Route::get('/step5/{step1Id}', [Step2Controller::class, 'step5'])->name('step5');
+    Route::get('/step6/{step1Id}', [Step2Controller::class, 'step6'])->name('step6');
+    Route::get('/step7/{step1Id}', [Step2Controller::class, 'step7'])->name('step7');
 
 
 });

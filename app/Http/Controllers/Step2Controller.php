@@ -5,12 +5,36 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Step2;
 
-
 class Step2Controller extends Controller
 {
     public function create($step1Id)
     {
         return view('step2', ['step1Id' => $step1Id]); // Pass the step1Id variable to the view
+    }
+
+    public function step3($step1Id)
+    {
+        return view('step3', ['step1Id' => $step1Id]);
+    }
+
+    public function step4($step1Id)
+    {
+        return view('step4', ['step1Id' => $step1Id]);
+    }
+
+    public function step5($step1Id)
+    {
+        return view('step5', ['step1Id' => $step1Id]);
+    }
+
+    public function step6($step1Id)
+    {
+        return view('step6', ['step1Id' => $step1Id]);
+    }
+
+    public function step7($step1Id)
+    {
+        return view('step7', ['step1Id' => $step1Id]);
     }
 
     public function store(Request $request)

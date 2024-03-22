@@ -44,8 +44,9 @@ Approach the evidence correctly, whether it's live or dead, and follow the appro
     <a href="{{ url()->previous() }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Back</a>
 </div>
 
-    <div class="container mx-auto flex justify-end mt-4">
-        <a href="{{ route('step6') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Next</a>
-    </div>
+<div class="container mx-auto flex justify-end mt-4">
+    <a href="{{ route('step6', ['step1Id' => $step1Id]) }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Next</a>
+</div>
+
 
 </x-app-layout>
