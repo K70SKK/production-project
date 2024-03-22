@@ -21,6 +21,7 @@ Approach the evidence correctly, whether it's live or dead, and follow the appro
             <form method="POST" action="{{ route('step2.store') }}">
 
                     @csrf
+                    <input type="hidden" name="step1_id" value="{{ $step1Id }}">
                     <div class="mb-4">
                         <label for="note" class="block text-sm font-medium text-gray-700">Note</label>
                         <textarea name="note" id="note" rows="4" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required></textarea>

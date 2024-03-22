@@ -29,7 +29,7 @@
             <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <form method="POST" action="{{ route('step2.store') }}">
 
-                    @csrf
+                    @csrf                    
                     <div class="mb-4">
                         <label for="note" class="block text-sm font-medium text-gray-700">Note</label>
                         <textarea name="note" id="note" rows="4" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required></textarea>

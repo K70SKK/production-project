@@ -132,6 +132,9 @@ Route::middleware('auth')->group(function () {
     Route::post('/step1/store', [Step1Controller::class, 'store'])->name('step1.store');
     Route::post('/step2/store', [Step2Controller::class, 'store'])->name('step2.store');
 
+    Route::get('/step2/create/{step1Id}', [Step2Controller::class, 'create'])->name('step2.create');
+
+
 });
 
 require __DIR__.'/auth.php';
