@@ -4,13 +4,17 @@
             {{ __('Step 2: Secure the Scene') }}
         </h2>
     </x-slot>
-
+    
+    <textarea class="w-full h-40 border border-gray-300 rounded-md p-2 mt-4 focus:outline-none focus:ring focus:border-blue-300" placeholder="Make sure that the only people at the crime scene have the authority to be there.
+Limit the amount of people that have access to the scene to avoid compromising the integrity of evidence.  
+Make sure that nothing gets taken in or outside of the scene.
+Take notes of any possible evidence you can see." rows="4" cols="50"></textarea>
     <div class="container mx-auto flex justify-center items-start py-12">
+
         <div class="w-full md:w-1/2">
             <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
                 <form method="POST" action="{{ route('step2.store') }}">
-                    @csrf
-                    <!-- Include step1_id as a hidden input field -->
+                    @csrf                    
                     <input type="hidden" name="step1_id" value="{{ $step1Id }}">
                     <div class="mb-4">
                         <label for="note" class="block text-sm font-medium text-gray-700">Note</label>

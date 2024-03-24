@@ -86,6 +86,10 @@ Route::middleware('auth')->group(function () {
         return view('list'); 
     })->name('list'); 
 
+    Route::get('/c', function () {
+        return view('c'); 
+    })->name('c');
+
     Route::get('/1step', function () {
         return view('1step'); 
     })->name('1step');
@@ -139,6 +143,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/step5/{step1Id}', [Step2Controller::class, 'step5'])->name('step5');
     Route::get('/step6/{step1Id}', [Step2Controller::class, 'step6'])->name('step6');
     Route::get('/step7/{step1Id}', [Step2Controller::class, 'step7'])->name('step7');
+
+    
+   
+    Route::get('/c', [Step1Controller::class, 'index'])->name('c');
+    Route::get('/cs/{case_number}', [App\Http\Controllers\CsController::class, 'show'])->name('cs.show');
 
 
 });

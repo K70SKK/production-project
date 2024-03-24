@@ -18,7 +18,7 @@
                         </div>
 
                         <div class="mb-4">
-                            <label for="company_data" class="block text-sm font-medium text-gray-700">Company Data</label>
+                            <label for="company_data" class="block text-sm font-medium text-gray-700">Company Name</label>
                             <input type="text" name="company_data" id="company_data" autocomplete="organization" value="LBU" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required>
                         </div>
 

@@ -3,7 +3,7 @@
         <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <form method="POST" action="{{ route('step2.store') }}">
                 @csrf
-                <!-- Include step1_id as a hidden input field -->
+                
                 <input type="hidden" name="step1_id" value="{{ $step1Id }}">
                 <div class="mb-4">
                     <label for="note" class="block text-sm font-medium text-gray-700">Note</label>
