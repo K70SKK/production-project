@@ -129,6 +129,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/ichain', function () {
         return view('ichain'); 
     })->name('ichain');  
+
+    Route::get('/help', function () {
+        return view('help'); 
+    })->name('help'); 
     
     Route::get('/datetime', [DateTimeController::class, 'showDateTimePage'])->name('datetime');
     Route::post('/changeDateTime', [DateTimeController::class, 'changeDateTime'])->name('changeDateTime'); 
